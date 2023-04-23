@@ -48,11 +48,11 @@ function Filtro() {
               })
               .map((val) => {
                 return (
-                  <Card className="container rounded me-2" key={val.id} style={{ width: '30rem' }}>
-                    <Card.Img className="mt-3 mb-2 px-2" style={{ width: '28rem' }} variant="top" src={val.image} />
+                  <Card className="d-flex justify-content-center rounded mx-auto d-block" key={val.id} style={{ width: '18rem' }}>
+                    <Card.Img className="mt-3 mb-2 px-2" style={{ width: '18rem' }} variant="top" src={val.image} />
                     <Card.Body>
                       <Card.Title>{val.autor}</Card.Title>
-                      <Card.Text>{val.text}
+                      <Card.Text className='text-start"'>{val.text}
                       </Card.Text>
                       <Heart />
                       <Toast className="mx-auto" style={{ width: '30rem' }}>
