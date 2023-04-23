@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function BasicNavbar() {
   return (
-    <Navbar classNam="px-3" bg="light" expand="lg">
+    <Navbar className="px-3" bg="light" expand="lg">
       <Container>
         <Link to="/items">
           <Navbar.Brand>Semana 2</Navbar.Brand>

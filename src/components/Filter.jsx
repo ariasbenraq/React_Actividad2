@@ -1,20 +1,22 @@
 import Card from 'react-bootstrap/Card';
-import React, { useState } from "react";
-import data from "../PostList.json";
+import React, { useEffect, useState } from "react";
+// import { getList } from "../services/PostListServices";
 import Heart from './myboton';
 import Toast from 'react-bootstrap/Toast';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import BasicNavbar from './Navbar';
+import data from '../PostList.json'
 
 
 function Filtro() {
   const [searchTerm, setSearchTerm] = useState("");
 
+
   // useEffect(() => {
   //   getList().then((data) => {
   //     setSearchTerm(data);
-  //   },);
+  //   });
   // }, []);
 
   return (

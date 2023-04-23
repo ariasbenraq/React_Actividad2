@@ -12,7 +12,7 @@ function ItemList() {
           data
             .map((val) => {
               return (
-                <div className="list-group list-group-flush">
+                <div className="list-group list-group-flush" key={val.id} >
                   <ul>
                     <li>{val.autor}</li>
                   </ul>

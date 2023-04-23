@@ -7,6 +7,7 @@ function ProfilePage() {
 
 
   const profileData = {
+    id:1,
     name: 'Renzo Arias',
     age: 36,
     occupation: 'Software Engineer',
@@ -18,7 +19,7 @@ function ProfilePage() {
 
     <div>
       <Container>
-        <div className="profile-page container text-center mt-5">
+        <div className="profile-page container text-center mt-5" key={ProfilePage.id} >
           <img className="mx-auto rounded" src={profileData.profilePic} style={{ width: '10rem' }} alt="Profile pic" />
           <h1>{profileData.name}</h1>
           <p>Age: {profileData.age}</p>
